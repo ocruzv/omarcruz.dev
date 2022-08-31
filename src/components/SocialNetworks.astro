@@ -1,0 +1,37 @@
+---
+import { Icon } from 'astro-icon';
+---
+
+<div id="social">
+  <ul>
+    <li><a href="https://github.com/ocruzv" title="Github" target="_blank" rel="noopener noreferrer"><Icon name="mdi:github" /></a></li>
+    <li><a href="https://www.linkedin.com/in/ocruzv/" title="LinkedIn" target="_blank" rel="noopener noreferrer"><Icon name="mdi:linkedin" /></a></li>
+    <li><a href="https://twitter.com/soyocruz/" title="Twitter" target="_blank" rel="noopener noreferrer"><Icon name="mdi:twitter" /></a></li>
+    <li><a href="https://medium.com/@ocruzvar" title="Medium" target="_blank" rel="noopener noreferrer"><Icon name="mdi:medium" /></a></li>
+  </ul>
+</div>
+
+<style>
+#social ul {
+  list-style: none;
+  display: grid;
+  align-items: center;
+  grid-auto-flow: column;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#social ul a {
+  color: rgba(0, 0, 0, 0.7);
+  transition: 0.3s all;
+}
+
+#social ul a:hover {
+  color: rgba(0, 0, 0, 1);
+}
+
+[astro-icon] {
+  height: 2rem;
+}
+</style>
